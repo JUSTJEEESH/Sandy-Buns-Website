@@ -46,14 +46,17 @@ export default function MenuPage() {
       <FadeInSection>
         <section className="py-12 bg-ocean-light/30">
           <div className="mx-auto max-w-container px-6">
-            <h2 className="font-heading text-2xl md:text-3xl text-driftwood mb-8 text-center">
-              ⭐ Popular Picks
+            <h2 className="font-heading text-2xl md:text-3xl text-driftwood mb-3 text-center">
+              ⭐ Fan Favorites
             </h2>
-            <div className="grid md:grid-cols-3 gap-6">
+            <p className="font-body text-text-body/60 text-sm text-center mb-8">
+              Breakfast & lunch hits — these fly off the counter
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
               {popularPicks.map((item) => (
                 <div
                   key={item.name}
-                  className="bg-warm-white rounded-2xl p-6 shadow-sm border border-sand"
+                  className="bg-white rounded-2xl p-6 shadow-md border border-sand/80 hover:shadow-lg transition-shadow"
                 >
                   <MenuItem item={item} />
                 </div>
