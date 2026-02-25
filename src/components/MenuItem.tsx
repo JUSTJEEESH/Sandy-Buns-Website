@@ -8,10 +8,10 @@ export default function MenuItem({ item }: MenuItemProps) {
   return (
     <div className="group">
       <div className="flex justify-between items-start gap-4">
-        <h4 className="font-heading text-lg text-ink group-hover:text-ocean transition-colors">
+        <h4 className="font-heading text-lg text-driftwood group-hover:text-ocean transition-colors">
           {item.name}
           {item.popular && (
-            <span className="ml-2 inline-block bg-ocean text-white text-xs font-body px-2 py-0.5 rounded-full align-middle">
+            <span className="ml-2 inline-block bg-sunset text-white text-xs font-body px-2 py-0.5 rounded-full align-middle">
               Popular
             </span>
           )}
@@ -22,7 +22,7 @@ export default function MenuItem({ item }: MenuItemProps) {
           </span>
         )}
       </div>
-      <p className="font-body text-charcoal/70 text-sm mt-1 leading-relaxed max-w-2xl">
+      <p className="font-body text-text-body/80 text-sm mt-1 leading-relaxed max-w-2xl">
         {item.description}
       </p>
     </div>
