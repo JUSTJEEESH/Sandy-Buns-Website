@@ -19,11 +19,11 @@ export const siteConfig = {
     closed: "Sundays",
   },
   coordinates: {
-    lat: 16.298,
-    lng: -86.5936,
+    lat: 16.304966887397985,
+    lng: -86.59355588219465,
   },
   googleMapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=16.2980,-86.5936",
+    "https://www.google.com/maps/search/?api=1&query=16.304966887397985,-86.59355588219465",
   social: {
     facebook: "https://www.facebook.com/sandybunsroatan",
     instagram: "https://www.instagram.com/sandybunsroatan",

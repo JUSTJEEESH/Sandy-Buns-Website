@@ -9,14 +9,14 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(135deg, #3B2F2F 0%, #C46A2E 40%, #3B2F2F 80%, #2B2B2B 100%)",
-          }}
+        <Image
+          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&q=80"
+          alt="Delicious food at Sandy Buns Bakery & Cafe in West End Roatán"
+          fill
+          className="object-cover"
+          priority
         />
-        <div className="absolute inset-0 bg-dark-brown/40" />
+        <div className="absolute inset-0 bg-dark-brown/60" />
 
         <div className="relative z-10 mx-auto max-w-container px-6 text-center py-32">
           <Image
@@ -89,24 +89,28 @@ export default function Home() {
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-3">
-                {/* TODO: Replace with real photos from Shantel & Tim */}
+                {/* TODO: Replace Unsplash images with real photos from Shantel & Tim */}
                 <ImagePlaceholder
                   label="Cinnamon Buns"
-                  className="rounded-2xl rotate-1 shadow-md"
+                  src="https://images.unsplash.com/photo-1509365390695-33aee754301f?w=600&h=450&fit=crop&q=80"
+                  className="rounded-2xl shadow-md"
                 />
                 <ImagePlaceholder
                   label="Brisket Benedict"
-                  className="rounded-3xl -rotate-1 shadow-md mt-6"
+                  src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=450&h=600&fit=crop&q=80"
+                  className="rounded-xl shadow-md mt-6"
                   aspectRatio="aspect-[3/4]"
                 />
                 <ImagePlaceholder
                   label="Big Breakfast"
-                  className="rounded-lg -rotate-2 shadow-md"
+                  src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=450&h=600&fit=crop&q=80"
+                  className="rounded-lg shadow-md"
                   aspectRatio="aspect-[3/4]"
                 />
                 <ImagePlaceholder
                   label="Fresh Burgers"
-                  className="rounded-2xl rotate-2 shadow-md -mt-6"
+                  src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=450&fit=crop&q=80"
+                  className="rounded-2xl shadow-md -mt-6"
                 />
               </div>
             </div>
