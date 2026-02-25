@@ -3,7 +3,7 @@ import { siteConfig } from "@/lib/siteConfig";
 
 export default function Footer() {
   return (
-    <footer className="bg-dark-brown text-sand py-16">
+    <footer className="bg-ink text-sand py-16">
       <div className="mx-auto max-w-container px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
@@ -32,7 +32,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sand/80 hover:text-burnt-orange transition-colors"
+                    className="text-sand/80 hover:text-ocean transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -49,7 +49,7 @@ export default function Footer() {
               <li>
                 <a
                   href={`tel:${siteConfig.phone}`}
-                  className="hover:text-burnt-orange transition-colors"
+                  className="hover:text-ocean transition-colors"
                 >
                   {siteConfig.phone}
                 </a>
@@ -63,7 +63,7 @@ export default function Footer() {
                   href={siteConfig.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-burnt-orange hover:text-cream transition-colors"
+                  className="inline-flex items-center gap-2 text-ocean hover:text-cream transition-colors"
                 >
                   <svg
                     className="w-5 h-5"

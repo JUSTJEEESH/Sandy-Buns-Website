@@ -20,7 +20,7 @@ export default function VisitPage() {
       {/* Header */}
       <section className="py-12 md:py-20">
         <div className="mx-auto max-w-container px-6 text-center">
-          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-dark-brown mb-4">
+          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-ink mb-4">
             Find Us in West End
           </h1>
           <p className="font-body text-charcoal/70 text-lg max-w-xl mx-auto">
@@ -39,7 +39,7 @@ export default function VisitPage() {
               <div className="space-y-8">
                 {/* Address */}
                 <div>
-                  <h2 className="font-heading text-xl text-dark-brown mb-2">
+                  <h2 className="font-heading text-xl text-ink mb-2">
                     Address
                   </h2>
                   <p className="font-body text-charcoal/80">
@@ -52,14 +52,14 @@ export default function VisitPage() {
 
                 {/* Hours */}
                 <div>
-                  <h2 className="font-heading text-xl text-dark-brown mb-2">
+                  <h2 className="font-heading text-xl text-ink mb-2">
                     Hours
                   </h2>
                   <div className="font-body text-charcoal/80 space-y-1">
                     <p>
                       {siteConfig.hours.days}: {siteConfig.hours.time}
                     </p>
-                    <p className="text-burnt-orange font-semibold">
+                    <p className="text-ocean font-semibold">
                       Closed {siteConfig.hours.closed}
                     </p>
                   </div>
@@ -67,12 +67,12 @@ export default function VisitPage() {
 
                 {/* Phone */}
                 <div>
-                  <h2 className="font-heading text-xl text-dark-brown mb-2">
+                  <h2 className="font-heading text-xl text-ink mb-2">
                     Phone
                   </h2>
                   <a
                     href={`tel:${siteConfig.phone}`}
-                    className="font-body text-burnt-orange hover:text-dark-brown transition-colors text-lg"
+                    className="font-body text-ocean hover:text-ink transition-colors text-lg"
                   >
                     {siteConfig.phone}
                   </a>
@@ -84,7 +84,7 @@ export default function VisitPage() {
                     href={siteConfig.googleMapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-burnt-orange text-white rounded-full px-8 py-3 font-body font-semibold hover:opacity-90 transition text-center"
+                    className="bg-ocean text-white rounded-full px-8 py-3 font-body font-semibold hover:opacity-90 transition text-center"
                   >
                     Get Directions
                   </a>
@@ -92,7 +92,7 @@ export default function VisitPage() {
                     href={siteConfig.whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="border-2 border-dark-brown text-dark-brown rounded-full px-8 py-3 font-body font-semibold hover:bg-dark-brown hover:text-white transition text-center inline-flex items-center justify-center gap-2"
+                    className="border-2 border-ink text-ink rounded-full px-8 py-3 font-body font-semibold hover:bg-ink hover:text-white transition text-center inline-flex items-center justify-center gap-2"
                   >
                     <svg
                       className="w-5 h-5"

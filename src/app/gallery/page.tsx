@@ -19,7 +19,7 @@ export default function GalleryPage() {
       {/* Header */}
       <section className="py-12 md:py-20">
         <div className="mx-auto max-w-container px-6 text-center">
-          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-dark-brown mb-4">
+          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-ink mb-4">
             A taste of Sandy Buns
           </h1>
           <p className="font-body text-charcoal/70 text-lg max-w-xl mx-auto">

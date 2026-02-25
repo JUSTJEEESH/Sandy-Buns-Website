@@ -16,7 +16,7 @@ export default function Home() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-dark-brown/60" />
+        <div className="absolute inset-0 bg-ink/60" />
 
         <div className="relative z-10 mx-auto max-w-container px-6 text-center py-32">
           <Image
@@ -38,7 +38,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               href="/menu"
-              className="bg-burnt-orange text-white rounded-full px-8 py-3 font-body font-semibold hover:opacity-90 transition text-lg"
+              className="bg-ocean text-white rounded-full px-8 py-3 font-body font-semibold hover:opacity-90 transition text-lg"
             >
               View Menu
             </Link>
@@ -46,7 +46,7 @@ export default function Home() {
               href={siteConfig.googleMapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="border-2 border-cream text-cream rounded-full px-8 py-3 font-body font-semibold hover:bg-cream hover:text-dark-brown transition text-lg"
+              className="border-2 border-cream text-cream rounded-full px-8 py-3 font-body font-semibold hover:bg-cream hover:text-ink transition text-lg"
             >
               Get Directions
             </a>
@@ -61,7 +61,7 @@ export default function Home() {
       <FadeInSection>
         <section className="py-20 md:py-28">
           <div className="mx-auto max-w-container px-6 text-center">
-            <h2 className="font-heading text-3xl md:text-4xl text-dark-brown mb-6">
+            <h2 className="font-heading text-3xl md:text-4xl text-ink mb-6">
               One of West End&apos;s favorite breakfast spots
             </h2>
             <p className="font-body text-charcoal/70 text-lg max-w-2xl mx-auto leading-relaxed">
@@ -78,7 +78,7 @@ export default function Home() {
           <div className="mx-auto max-w-container px-6">
             <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
               <div>
-                <h2 className="font-heading text-3xl md:text-4xl text-dark-brown mb-6">
+                <h2 className="font-heading text-3xl md:text-4xl text-ink mb-6">
                   More than just a bakery
                 </h2>
                 <p className="font-body text-charcoal/70 text-lg leading-relaxed">
@@ -122,7 +122,7 @@ export default function Home() {
       <FadeInSection>
         <section className="py-20 md:py-28">
           <div className="mx-auto max-w-container px-6 text-center max-w-3xl">
-            <h2 className="font-heading text-3xl md:text-4xl text-dark-brown mb-6">
+            <h2 className="font-heading text-3xl md:text-4xl text-ink mb-6">
               Slow mornings done right
             </h2>
             <p className="font-body text-charcoal/70 text-lg leading-relaxed">
@@ -137,7 +137,7 @@ export default function Home() {
 
       {/* Quick Info Strip */}
       <FadeInSection>
-        <section className="py-16 bg-dark-brown">
+        <section className="py-16 bg-ink">
           <div className="mx-auto max-w-container px-6">
             <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
               {[
@@ -247,7 +247,7 @@ export default function Home() {
                   key={i}
                   className="flex flex-col items-center text-cream gap-2"
                 >
-                  <div className="text-burnt-orange">{item.icon}</div>
+                  <div className="text-ocean">{item.icon}</div>
                   <p className="font-body font-semibold text-sm">{item.text}</p>
                   <p className="font-body text-cream/50 text-xs">
                     {item.subtext}
@@ -263,14 +263,14 @@ export default function Home() {
       <FadeInSection>
         <section className="py-20 md:py-28">
           <div className="mx-auto max-w-container px-6 text-center">
-            <h2 className="font-heading text-4xl md:text-5xl text-dark-brown mb-8">
+            <h2 className="font-heading text-4xl md:text-5xl text-ink mb-8">
               Come hungry
             </h2>
             <a
               href={siteConfig.googleMapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-burnt-orange text-white rounded-full px-10 py-4 font-body font-semibold hover:opacity-90 transition text-lg"
+              className="inline-block bg-ocean text-white rounded-full px-10 py-4 font-body font-semibold hover:opacity-90 transition text-lg"
             >
               Get Directions
             </a>
