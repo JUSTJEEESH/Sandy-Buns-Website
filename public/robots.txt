@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://sandybuns.netlify.app
+
+# Sitemaps
+Sitemap: https://sandybuns.netlify.app/sitemap.xml
