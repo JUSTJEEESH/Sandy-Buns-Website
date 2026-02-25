@@ -53,21 +53,24 @@ export default function AboutPage() {
               </div>
 
               <div className="space-y-4">
-                {/* TODO: Replace with real photos from Shantel & Tim */}
+                {/* TODO: Replace Unsplash images with real photos from Shantel & Tim */}
                 <ImagePlaceholder
                   label="The Restaurant"
-                  className="rounded-3xl rotate-1 shadow-lg"
+                  src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop&q=80"
+                  className="rounded-2xl shadow-lg"
                   aspectRatio="aspect-[4/3]"
                 />
                 <div className="grid grid-cols-2 gap-4">
                   <ImagePlaceholder
                     label="In the Kitchen"
-                    className="rounded-2xl -rotate-2 shadow-md"
+                    src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600&h=600&fit=crop&q=80"
+                    className="rounded-xl shadow-md"
                     aspectRatio="aspect-square"
                   />
                   <ImagePlaceholder
                     label="Shantel & Tim"
-                    className="rounded-lg rotate-2 shadow-md"
+                    src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=600&h=600&fit=crop&q=80"
+                    className="rounded-xl shadow-md"
                     aspectRatio="aspect-square"
                   />
                 </div>
