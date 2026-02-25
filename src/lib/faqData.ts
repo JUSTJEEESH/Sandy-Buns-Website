@@ -35,9 +35,9 @@ export const faqItems = [
       "Yes! We have avocado toast, a veggie sandwich on fresh-baked baguette, a cold veggie wrap, and several sides. We can also modify many items — just ask.",
   },
   {
-    question: "Do you accept credit cards?",
+    question: "What payment methods do you accept?",
     answer:
-      "Yes, we accept both cash and major credit/debit cards.",
+      "We accept cash in both US dollars and Honduran lempiras. We also accept PayPal and bank transfers. We do not accept credit or debit cards at this time.",
   },
   {
     question: "Do you have WiFi?",

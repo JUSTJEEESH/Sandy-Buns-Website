@@ -1,14 +1,32 @@
+import Image from "next/image";
+
 interface ImagePlaceholderProps {
   label: string;
+  src?: string;
   className?: string;
   aspectRatio?: string;
 }
 
 export default function ImagePlaceholder({
   label,
+  src,
   className = "",
   aspectRatio = "aspect-[4/3]",
 }: ImagePlaceholderProps) {
+  if (src) {
+    return (
+      <div className={`relative overflow-hidden ${aspectRatio} ${className}`}>
+        <Image
+          src={src}
+          alt={label}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+      </div>
+    );
+  }
+
   return (
     <div
       className={`relative overflow-hidden ${aspectRatio} ${className}`}

@@ -47,6 +47,8 @@ function RestaurantJsonLd() {
     priceRange: "$5-$17",
     menu: `${siteConfig.url}/menu`,
     acceptsReservations: "No",
+    paymentAccepted: "Cash, PayPal",
+    currenciesAccepted: "USD, HNL",
     sameAs: [siteConfig.social.facebook, siteConfig.social.instagram],
     amenityFeature: [
       { "@type": "LocationFeatureSpecification", name: "Free WiFi", value: true },
@@ -130,8 +132,13 @@ function RestaurantJsonLd() {
             },
             {
               "@type": "MenuItem",
-              name: "Banana Bread",
-              description: "Moist, homemade banana bread baked fresh daily.",
+              name: "Chocolate Chip Cookies",
+              description: "Warm, gooey chocolate chip cookies baked fresh daily.",
+            },
+            {
+              "@type": "MenuItem",
+              name: "Brownies",
+              description: "Rich, fudgy brownies made from scratch.",
             },
           ],
         },

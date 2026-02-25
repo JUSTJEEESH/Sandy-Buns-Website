@@ -18,11 +18,15 @@ export default function MenuCategorySection({ category }: MenuSectionProps) {
       )}
       {!category.subtitle && <div className="mb-6" />}
 
-      <div className="space-y-6">
+      <div className="space-y-4">
         {category.items.map((item) => (
           <div
             key={item.name}
-            className="p-4 rounded-xl bg-cream/60 border border-sand hover:border-seafoam/50 transition-colors"
+            className={`p-5 rounded-xl shadow-sm transition-all hover:shadow-md ${
+              item.popular
+                ? "bg-sunset-light/70 border-2 border-sunset/30"
+                : "bg-white border border-sand/80"
+            }`}
           >
             <MenuItem item={item} />
           </div>

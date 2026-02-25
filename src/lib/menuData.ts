@@ -20,7 +20,14 @@ export interface MenuSection {
 
 export const popularPicks: MenuItem[] = [
   {
-    name: "Cinnamon Bun",
+    name: "Mother Clucker",
+    price: "$14",
+    description:
+      "Our #1 seller. An open-faced cheddar jalapeno biscuit topped with garlic cheese breakfast potatoes, 2 scrambled eggs, smothered in made-from-scratch sausage gravy and topped with fried hot honey chicken breast and cowboy candy.",
+    popular: true,
+  },
+  {
+    name: "Famous Cinnamon Bun",
     description:
       "Try our famous cinnamon bun. You won't regret it or forget it!",
     popular: true,
@@ -33,10 +40,24 @@ export const popularPicks: MenuItem[] = [
     popular: true,
   },
   {
-    name: "Texas Size Breakfast Burrito",
-    price: "$10",
+    name: "Brisket Nachos",
+    price: "$15",
     description:
-      "Bacon and sausage, 4 eggs, potatoes, pico de gallo and cheese wrapped in a giant tortilla and served with house-made salsa.",
+      "Crispy corn tortilla chips loaded with house-made queso blanco, smoked brisket, pico de gallo, BBQ sauce, chipotle cream, jalapenos, and guacamole.",
+    popular: true,
+  },
+  {
+    name: "Original Sandy Buns Burger",
+    price: "$13",
+    description:
+      "Burger patty with cheese, lettuce, tomato, pickles, onions, and served with house made special sauce all on a fresh-made bun. Served with fries.",
+    popular: true,
+  },
+  {
+    name: "Buffalo Chicken Sandwich",
+    price: "$14",
+    description:
+      "Hand-breaded chicken breast tossed in house-made buffalo sauce, blue cheese, lettuce, tomatoes, pickles, and onions with ranch on a fresh-made bun. Served with fries.",
     popular: true,
   },
 ];
@@ -118,6 +139,7 @@ export const menuSections: MenuSection[] = [
             price: "$14",
             description:
               "An open-faced cheddar jalapeno biscuit topped with garlic cheese breakfast potatoes, 2 scrambled eggs, smothered in made-from-scratch sausage gravy and topped with fried hot honey chicken breast and cowboy candy.",
+            popular: true,
           },
         ],
         addOns: [
@@ -174,6 +196,7 @@ export const menuSections: MenuSection[] = [
             price: "$15",
             description:
               "Crispy corn tortilla chips, topped with house-made queso blanco, smoked brisket, pico de gallo, BBQ sauce, chipotle cream sauce, jalapenos and finished with a dollop of guacamole.",
+            popular: true,
           },
           {
             name: "Chips & Queso",
@@ -192,6 +215,7 @@ export const menuSections: MenuSection[] = [
             price: "$13",
             description:
               "Burger patty with cheese, lettuce, tomato, pickles, onions, and served with house made special sauce all on a fresh-made bun.",
+            popular: true,
           },
           {
             name: "Texas 2 Step Burger",
@@ -247,6 +271,7 @@ export const menuSections: MenuSection[] = [
             price: "$14",
             description:
               "Hand-breaded chicken breast tossed in house-made buffalo sauce, blue cheese, lettuce, tomatoes, pickles, and onions and house made ranch dressing all on a fresh-made bun.",
+            popular: true,
           },
           {
             name: "Blackened Chicken Sandwich",
@@ -326,6 +351,7 @@ export const menuSections: MenuSection[] = [
             price: "$14",
             description:
               "Grilled chicken breast, crispy bacon, fresh greens, tomato, avocado, hard boiled eggs, blue cheese served with your choice of house made dressing.",
+            popular: true,
           },
         ],
         note: "Add brisket to any meal $5. A la carte brisket (4oz) $7.",
@@ -381,12 +407,12 @@ export const menuSections: MenuSection[] = [
               "Our signature cinnamon bun — the reason many people walk through the door.",
           },
           {
-            name: "Banana Bread",
-            description: "Moist, homemade banana bread baked fresh.",
+            name: "Chocolate Chip Cookies",
+            description: "Warm, gooey chocolate chip cookies baked fresh daily. The perfect grab-and-go treat.",
           },
           {
-            name: "Muffins",
-            description: "Fresh baked each morning. Ask about today's flavors.",
+            name: "Brownies",
+            description: "Rich, fudgy brownies made from scratch. A chocolate lover's dream.",
           },
         ],
       },

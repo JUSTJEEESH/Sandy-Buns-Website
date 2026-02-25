@@ -121,11 +121,15 @@ export default function Home() {
                 <h2 className="font-heading text-3xl md:text-4xl text-driftwood mb-6">
                   More than just a bakery
                 </h2>
-                <p className="font-body text-text-body text-lg leading-relaxed mb-6">
+                <p className="font-body text-text-body text-lg leading-relaxed mb-4">
                   Yeah, we&apos;re known for the cinnamon buns. But that&apos;s
-                  just the beginning. From brisket benedicts to big breakfast
-                  plates and burgers that actually fill you up, everything here
-                  is made fresh and meant to satisfy.
+                  just the beginning. The Mother Clucker is our #1 seller, the
+                  brisket nachos are loaded, and the burgers are handmade on
+                  fresh-baked buns.
+                </p>
+                <p className="font-body text-text-body text-lg leading-relaxed mb-6">
+                  Breakfast or lunch — everything here is made fresh and meant
+                  to satisfy.
                 </p>
                 <Link
                   href="/menu"
@@ -136,21 +140,21 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-2 gap-3">
                 <ImagePlaceholder
-                  label="Famous Cinnamon Buns"
+                  label="The Mother Clucker — #1 Seller"
                   className="rounded-2xl shadow-md"
                 />
                 <ImagePlaceholder
-                  label="Brisket Benedict"
+                  label="Loaded Brisket Nachos"
                   className="rounded-xl shadow-md mt-6"
                   aspectRatio="aspect-[3/4]"
                 />
                 <ImagePlaceholder
-                  label="Big Texas Breakfast"
+                  label="Handmade Burgers & Fries"
                   className="rounded-lg shadow-md"
                   aspectRatio="aspect-[3/4]"
                 />
                 <ImagePlaceholder
-                  label="Handmade Burgers"
+                  label="Famous Cinnamon Buns"
                   className="rounded-2xl shadow-md -mt-6"
                 />
               </div>

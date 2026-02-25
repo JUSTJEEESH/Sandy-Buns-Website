@@ -90,7 +90,7 @@ export default function VisitPage() {
                   <ul className="font-body text-text-body/80 text-sm space-y-1">
                     <li>🐕 Dog-friendly patio</li>
                     <li>📶 Free WiFi</li>
-                    <li>💳 Cash & card accepted</li>
+                    <li>💵 Cash (USD & Lempiras), PayPal, bank transfer</li>
                     <li>🅿️ Street parking available</li>
                   </ul>
                 </div>

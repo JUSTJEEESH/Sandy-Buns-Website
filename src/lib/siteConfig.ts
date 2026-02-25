@@ -22,10 +22,8 @@ export const siteConfig = {
     lat: 16.304966887397985,
     lng: -86.59355588219465,
   },
-  googleMapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=16.304966887397985,-86.59355588219465",
-  googleReviewUrl:
-    "https://www.google.com/maps/place/Sandy+Buns+Bakery+%26+Cafe/@16.304966887397985,-86.59355588219465",
+  googleMapsUrl: "https://maps.app.goo.gl/PHSySnv1XpUqo2fH7",
+  googleReviewUrl: "https://maps.app.goo.gl/PHSySnv1XpUqo2fH7",
   social: {
     facebook: "https://www.facebook.com/sandybunsroatan",
     instagram: "https://www.instagram.com/sandybunsroatan",
