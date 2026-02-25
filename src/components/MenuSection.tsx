@@ -8,11 +8,11 @@ interface MenuSectionProps {
 export default function MenuCategorySection({ category }: MenuSectionProps) {
   return (
     <div className="mb-12">
-      <h3 className="font-heading text-2xl md:text-3xl text-dark-brown mb-1">
+      <h3 className="font-heading text-2xl md:text-3xl text-ink mb-1">
         {category.title}
       </h3>
       {category.subtitle && (
-        <p className="font-body text-burnt-orange text-sm mb-6 italic">
+        <p className="font-body text-ocean text-sm mb-6 italic">
           {category.subtitle}
         </p>
       )}
@@ -26,14 +26,14 @@ export default function MenuCategorySection({ category }: MenuSectionProps) {
 
       {category.addOns && category.addOns.length > 0 && (
         <div className="mt-6 p-4 bg-sand/50 rounded-2xl">
-          <p className="font-body text-dark-brown font-semibold text-sm mb-2">
+          <p className="font-body text-ink font-semibold text-sm mb-2">
             Add-Ons:
           </p>
           <ul className="font-body text-charcoal/80 text-sm space-y-1">
             {category.addOns.map((addon) => (
               <li key={addon.name}>
                 {addon.name}{" "}
-                <span className="text-burnt-orange font-semibold">
+                <span className="text-ocean font-semibold">
                   {addon.price}
                 </span>
               </li>

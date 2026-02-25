@@ -26,7 +26,7 @@ export default function ImagePlaceholder({
         />
       ) : (
         <div className="absolute inset-0 bg-sand flex items-center justify-center p-4">
-          <span className="font-heading text-dark-brown/40 text-lg md:text-xl text-center leading-snug">
+          <span className="font-heading text-ink/40 text-lg md:text-xl text-center leading-snug">
             {label}
           </span>
         </div>

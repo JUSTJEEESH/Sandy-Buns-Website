@@ -8,16 +8,16 @@ export default function MenuItem({ item }: MenuItemProps) {
   return (
     <div className="group">
       <div className="flex justify-between items-start gap-4">
-        <h4 className="font-heading text-lg text-dark-brown group-hover:text-burnt-orange transition-colors">
+        <h4 className="font-heading text-lg text-ink group-hover:text-ocean transition-colors">
           {item.name}
           {item.popular && (
-            <span className="ml-2 inline-block bg-burnt-orange text-white text-xs font-body px-2 py-0.5 rounded-full align-middle">
+            <span className="ml-2 inline-block bg-ocean text-white text-xs font-body px-2 py-0.5 rounded-full align-middle">
               Popular
             </span>
           )}
         </h4>
         {item.price && (
-          <span className="font-body text-burnt-orange font-semibold whitespace-nowrap text-lg">
+          <span className="font-body text-ocean font-semibold whitespace-nowrap text-lg">
             {item.price}
           </span>
         )}

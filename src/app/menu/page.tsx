@@ -21,7 +21,7 @@ export default function MenuPage() {
       {/* Intro */}
       <section className="py-12 md:py-20">
         <div className="mx-auto max-w-container px-6 text-center">
-          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-dark-brown mb-4">
+          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-ink mb-4">
             Breakfast, Bakery & Comfort Food
           </h1>
           <p className="font-body text-charcoal/70 text-lg max-w-xl mx-auto">
@@ -33,9 +33,9 @@ export default function MenuPage() {
 
       {/* Popular Picks */}
       <FadeInSection>
-        <section className="py-12 bg-burnt-orange/10">
+        <section className="py-12 bg-ocean/10">
           <div className="mx-auto max-w-container px-6">
-            <h2 className="font-heading text-2xl md:text-3xl text-dark-brown mb-8 text-center">
+            <h2 className="font-heading text-2xl md:text-3xl text-ink mb-8 text-center">
               Popular Picks
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
@@ -57,7 +57,7 @@ export default function MenuPage() {
         <FadeInSection key={section.title}>
           <section className="py-12 md:py-16">
             <div className="mx-auto max-w-container px-6">
-              <h2 className="font-heading text-3xl md:text-4xl text-dark-brown mb-2 pb-4 border-b-2 border-burnt-orange/30">
+              <h2 className="font-heading text-3xl md:text-4xl text-ink mb-2 pb-4 border-b-2 border-ocean/30">
                 {section.title}
               </h2>
               <p className="font-body text-charcoal/50 text-sm mb-10">

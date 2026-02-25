@@ -9,12 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        sand: "#F0EBE3",
-        cream: "#FFF9F0",
-        "dark-brown": "#2B2522",
-        charcoal: "#3C3836",
-        "burnt-orange": "#B45309",
-        "warm-white": "#FDFBF7",
+        sand: "#F5F3EF",
+        cream: "#FEFCF7",
+        ink: "#1A1A1A",
+        charcoal: "#525252",
+        ocean: "#0F766E",
+        "warm-white": "#FAFAF9",
       },
       fontFamily: {
         heading: ['"Playfair Display"', "serif"],

@@ -40,7 +40,7 @@ export default function Navbar() {
             className="rounded-full"
             priority
           />
-          <span className="font-heading text-xl text-dark-brown font-bold hidden sm:inline">
+          <span className="font-heading text-xl text-ink font-bold hidden sm:inline">
             Sandy Buns
           </span>
         </Link>
@@ -51,7 +51,7 @@ export default function Navbar() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="font-body text-dark-brown hover:text-burnt-orange transition-colors text-sm tracking-wide uppercase"
+                className="font-body text-ink hover:text-ocean transition-colors text-sm tracking-wide uppercase"
               >
                 {link.label}
               </Link>
@@ -66,17 +66,17 @@ export default function Navbar() {
           aria-label="Toggle menu"
         >
           <span
-            className={`block w-6 h-0.5 bg-dark-brown transition-transform ${
+            className={`block w-6 h-0.5 bg-ink transition-transform ${
               isOpen ? "rotate-45 translate-y-2" : ""
             }`}
           />
           <span
-            className={`block w-6 h-0.5 bg-dark-brown transition-opacity ${
+            className={`block w-6 h-0.5 bg-ink transition-opacity ${
               isOpen ? "opacity-0" : ""
             }`}
           />
           <span
-            className={`block w-6 h-0.5 bg-dark-brown transition-transform ${
+            className={`block w-6 h-0.5 bg-ink transition-transform ${
               isOpen ? "-rotate-45 -translate-y-2" : ""
             }`}
           />
@@ -92,7 +92,7 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="font-body text-dark-brown hover:text-burnt-orange transition-colors text-lg"
+                  className="font-body text-ink hover:text-ocean transition-colors text-lg"
                 >
                   {link.label}
                 </Link>

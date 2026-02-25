@@ -19,7 +19,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="py-12 md:py-20">
         <div className="mx-auto max-w-container px-6 text-center">
-          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-dark-brown mb-4">
+          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-ink mb-4">
             Good food, no shortcuts
           </h1>
         </div>
@@ -100,7 +100,7 @@ export default function AboutPage() {
                 },
               ].map((value) => (
                 <div key={value.title} className="text-center">
-                  <h3 className="font-heading text-xl text-dark-brown mb-3">
+                  <h3 className="font-heading text-xl text-ink mb-3">
                     {value.title}
                   </h3>
                   <p className="font-body text-charcoal/70 leading-relaxed">
