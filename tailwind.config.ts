@@ -9,12 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        sand: "#F5F3EF",
-        cream: "#FEFCF7",
+        ocean: "#0EA5AC",
+        "ocean-dark": "#0C8B91",
+        "ocean-light": "#E0F5F5",
+        sunset: "#E8985E",
+        "sunset-light": "#FDF0E4",
+        driftwood: "#5C4B3C",
+        charcoal: "#3A3A3A",
+        "text-body": "#5A5349",
+        seafoam: "#B8E0D2",
+        palm: "#5DB075",
+        sand: "#F5F0E8",
+        cream: "#FFF9F0",
+        "warm-white": "#FDFBF7",
         ink: "#1A1A1A",
-        charcoal: "#525252",
-        ocean: "#0F766E",
-        "warm-white": "#FAFAF9",
+        maroon: "#500000",
       },
       fontFamily: {
         heading: ['"Playfair Display"', "serif"],

@@ -10,30 +10,36 @@ import { siteConfig } from "@/lib/siteConfig";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Sandy Buns Bakery & Cafe | Best Breakfast in West End, Roatán",
-    template: "%s | Sandy Buns Bakery & Cafe",
+    default:
+      "Sandy Buns Bakery & Cafe — Famous Cinnamon Buns & Breakfast in West End, Roatán",
+    template: "%s | Sandy Buns Bakery & Cafe — West End, Roatán",
   },
-  description: siteConfig.description,
+  description:
+    "Famous cinnamon buns and big Texas-style breakfasts in West End, Roatán. Fresh baked every morning. Breakfast served all day, 8am–3pm Monday–Saturday. Burgers, brisket, and bakery too.",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: "Sandy Buns Bakery & Cafe | Best Breakfast in West End, Roatán",
-    description: siteConfig.description,
+    title:
+      "Sandy Buns Bakery & Cafe — Famous Cinnamon Buns & Breakfast in West End, Roatán",
+    description:
+      "Famous cinnamon buns and big Texas-style breakfasts in West End, Roatán. Fresh baked every morning. Breakfast served all day.",
     images: [
       {
         url: "/images/sandy-buns-logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Sandy Buns Bakery & Cafe - West End, Roatán",
+        alt: "Sandy Buns Bakery & Cafe — Best Breakfast in West End, Roatán, Honduras",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sandy Buns Bakery & Cafe | Best Breakfast in West End, Roatán",
-    description: siteConfig.description,
+    title:
+      "Sandy Buns Bakery & Cafe — Famous Cinnamon Buns & Breakfast in West End, Roatán",
+    description:
+      "Famous cinnamon buns and big Texas-style breakfasts. Fresh baked every morning in West End, Roatán.",
     images: ["/images/sandy-buns-logo.jpg"],
   },
   robots: {

@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import FadeInSection from "@/components/FadeInSection";
 import MapEmbed from "@/components/MapEmbed";
 import { siteConfig } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Visit — Location, Hours & Contact",
+  title: "Visit Us — Hours, Location & Directions | West End, Roatán",
   description:
-    "Find Sandy Buns Bakery & Cafe in West End, Roatán. Open 8am-3pm Monday-Saturday. Near Half Moon Bay. Get directions, hours, and contact info.",
+    "Find Sandy Buns Bakery & Cafe on Main Road in West End, Roatán. Open 8am–3pm Monday–Saturday. Breakfast served all day. Get directions, hours, phone, and WhatsApp contact.",
   openGraph: {
-    title: "Visit — Sandy Buns Bakery & Cafe",
+    title: "Visit Sandy Buns — Hours & Directions | West End, Roatán",
     description:
-      "Find us in West End, Roatán. Open 8am-3pm Monday-Saturday. Near Half Moon Bay.",
+      "Main Road, West End, Roatán. Open 8am–3pm Monday–Saturday. Breakfast served all day. Dog-friendly patio, free WiFi.",
   },
 };
 
@@ -20,12 +21,12 @@ export default function VisitPage() {
       {/* Header */}
       <section className="py-12 md:py-20">
         <div className="mx-auto max-w-container px-6 text-center">
-          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-ink mb-4">
+          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-driftwood mb-4">
             Find Us in West End
           </h1>
-          <p className="font-body text-charcoal/70 text-lg max-w-xl mx-auto">
-            Just a short walk from Half Moon Bay, Sandy Buns is easy to find and
-            worth the stop. Come early — things tend to sell out.
+          <p className="font-body text-text-body/70 text-lg max-w-xl mx-auto">
+            We&apos;re on Main Road in West End, Roatán — just a short walk from Half Moon Bay.
+            Come early, things tend to sell out.
           </p>
         </div>
       </section>
@@ -39,43 +40,59 @@ export default function VisitPage() {
               <div className="space-y-8">
                 {/* Address */}
                 <div>
-                  <h2 className="font-heading text-xl text-ink mb-2">
+                  <h2 className="font-heading text-xl text-driftwood mb-2">
                     Address
                   </h2>
-                  <p className="font-body text-charcoal/80">
+                  <p className="font-body text-text-body">
                     {siteConfig.address.full}
                   </p>
-                  <p className="font-body text-charcoal/60 text-sm">
-                    In the heart of West End
+                  <p className="font-body text-text-body/60 text-sm">
+                    On the main road through West End — look for the Sandy Buns sign on your left if you&apos;re walking from Half Moon Bay.
                   </p>
                 </div>
 
                 {/* Hours */}
                 <div>
-                  <h2 className="font-heading text-xl text-ink mb-2">
+                  <h2 className="font-heading text-xl text-driftwood mb-2">
                     Hours
                   </h2>
-                  <div className="font-body text-charcoal/80 space-y-1">
+                  <div className="font-body text-text-body space-y-1">
                     <p>
                       {siteConfig.hours.days}: {siteConfig.hours.time}
                     </p>
-                    <p className="text-ocean font-semibold">
+                    <p className="text-sunset font-semibold">
                       Closed {siteConfig.hours.closed}
+                    </p>
+                    <p className="text-text-body/60 text-sm">
+                      Breakfast served all day
                     </p>
                   </div>
                 </div>
 
                 {/* Phone */}
                 <div>
-                  <h2 className="font-heading text-xl text-ink mb-2">
+                  <h2 className="font-heading text-xl text-driftwood mb-2">
                     Phone
                   </h2>
                   <a
                     href={`tel:${siteConfig.phone}`}
-                    className="font-body text-ocean hover:text-ink transition-colors text-lg"
+                    className="font-body text-ocean hover:text-ocean-dark transition-colors text-lg"
                   >
                     {siteConfig.phone}
                   </a>
+                </div>
+
+                {/* Amenities */}
+                <div>
+                  <h2 className="font-heading text-xl text-driftwood mb-2">
+                    Good to Know
+                  </h2>
+                  <ul className="font-body text-text-body/80 text-sm space-y-1">
+                    <li>🐕 Dog-friendly patio</li>
+                    <li>📶 Free WiFi</li>
+                    <li>💳 Cash & card accepted</li>
+                    <li>🅿️ Street parking available</li>
+                  </ul>
                 </div>
 
                 {/* Actions */}
@@ -84,7 +101,7 @@ export default function VisitPage() {
                     href={siteConfig.googleMapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-ocean text-white rounded-full px-8 py-3 font-body font-semibold hover:opacity-90 transition text-center"
+                    className="bg-ocean text-white rounded-full px-8 py-3 font-body font-semibold hover:bg-ocean-dark transition text-center"
                   >
                     Get Directions
                   </a>
@@ -92,7 +109,7 @@ export default function VisitPage() {
                     href={siteConfig.whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="border-2 border-ink text-ink rounded-full px-8 py-3 font-body font-semibold hover:bg-ink hover:text-white transition text-center inline-flex items-center justify-center gap-2"
+                    className="border-2 border-driftwood text-driftwood rounded-full px-8 py-3 font-body font-semibold hover:bg-driftwood hover:text-white transition text-center inline-flex items-center justify-center gap-2"
                   >
                     <svg
                       className="w-5 h-5"
@@ -105,6 +122,18 @@ export default function VisitPage() {
                     WhatsApp Us
                   </a>
                 </div>
+
+                {/* Google Review Link */}
+                <div className="pt-2">
+                  <a
+                    href={siteConfig.googleReviewUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-body text-ocean hover:text-ocean-dark transition-colors text-sm underline"
+                  >
+                    Leave us a Google review &#9733;
+                  </a>
+                </div>
               </div>
 
               {/* Map */}
@@ -112,6 +141,23 @@ export default function VisitPage() {
                 <MapEmbed />
               </div>
             </div>
+          </div>
+        </section>
+      </FadeInSection>
+
+      {/* Internal Link */}
+      <FadeInSection>
+        <section className="py-12">
+          <div className="mx-auto max-w-container px-6 text-center">
+            <p className="font-body text-text-body mb-4">
+              Check out what&apos;s on the menu before you come.
+            </p>
+            <Link
+              href="/menu"
+              className="inline-block bg-ocean text-white rounded-full px-8 py-3 font-body font-semibold hover:bg-ocean-dark transition"
+            >
+              View Menu
+            </Link>
           </div>
         </section>
       </FadeInSection>

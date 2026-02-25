@@ -8,7 +8,7 @@ interface MenuSectionProps {
 export default function MenuCategorySection({ category }: MenuSectionProps) {
   return (
     <div className="mb-12">
-      <h3 className="font-heading text-2xl md:text-3xl text-ink mb-1">
+      <h3 className="font-heading text-2xl md:text-3xl text-driftwood mb-1">
         {category.title}
       </h3>
       {category.subtitle && (
@@ -20,16 +20,21 @@ export default function MenuCategorySection({ category }: MenuSectionProps) {
 
       <div className="space-y-6">
         {category.items.map((item) => (
-          <MenuItem key={item.name} item={item} />
+          <div
+            key={item.name}
+            className="p-4 rounded-xl bg-cream/60 border border-sand hover:border-seafoam/50 transition-colors"
+          >
+            <MenuItem item={item} />
+          </div>
         ))}
       </div>
 
       {category.addOns && category.addOns.length > 0 && (
-        <div className="mt-6 p-4 bg-sand/50 rounded-2xl">
-          <p className="font-body text-ink font-semibold text-sm mb-2">
+        <div className="mt-6 p-4 bg-sunset-light rounded-2xl">
+          <p className="font-body text-driftwood font-semibold text-sm mb-2">
             Add-Ons:
           </p>
-          <ul className="font-body text-charcoal/80 text-sm space-y-1">
+          <ul className="font-body text-text-body/80 text-sm space-y-1">
             {category.addOns.map((addon) => (
               <li key={addon.name}>
                 {addon.name}{" "}
@@ -43,7 +48,7 @@ export default function MenuCategorySection({ category }: MenuSectionProps) {
       )}
 
       {category.note && (
-        <p className="mt-4 font-body text-charcoal/60 text-sm italic">
+        <p className="mt-4 font-body text-text-body/60 text-sm italic">
           {category.note}
         </p>
       )}

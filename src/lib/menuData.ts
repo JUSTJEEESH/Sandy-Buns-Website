@@ -29,7 +29,7 @@ export const popularPicks: MenuItem[] = [
     name: "Texas Benedict",
     price: "$15",
     description:
-      "An open-faced cheddar jalapeno biscuit topped with garlic cheese breakfast potatoes, 2 scrambled eggs, smothered in made-from-scratch sausage gravy and topped with Texas smoked brisket.",
+      "An open-faced cheddar jalapeno biscuit topped with garlic cheese breakfast potatoes, 2 scrambled eggs, smothered in made-from-scratch sausage gravy and topped with Texas smoked brisket. Texas-sized, Aggie-approved.",
     popular: true,
   },
   {
@@ -111,7 +111,7 @@ export const menuSections: MenuSection[] = [
             name: "Texas Benedict",
             price: "$15",
             description:
-              "An open-faced cheddar jalapeno biscuit topped with garlic cheese breakfast potatoes, 2 scrambled eggs, smothered in made-from-scratch sausage gravy and topped with Texas smoked brisket. Garnished with jalapenos.",
+              "An open-faced cheddar jalapeno biscuit topped with garlic cheese breakfast potatoes, 2 scrambled eggs, smothered in made-from-scratch sausage gravy and topped with Texas smoked brisket. Garnished with jalapenos. Texas-sized, Aggie-approved.",
           },
           {
             name: "Mother Clucker",
